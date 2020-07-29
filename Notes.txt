@@ -1,0 +1,22 @@
+1)You can download a free MySQL database at 
+https://www.mysql.com/downloads/
+
+2) runthe npm init command to create the package.json file
+>npm init -y
+
+3) Install MySQL Driver
+>npm install mysql
+
+4) run bellow 2 query in SQL workbench to give access
+-- replace root with user and password with correct value
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'
+flush privileges;
+
+5) create connectmysql.js
+>node connectmysql.js
+
+6)create selectquery.js to slect records from table
+>node selectquery.js
+7) insert query
+>node insertquery.js
+
