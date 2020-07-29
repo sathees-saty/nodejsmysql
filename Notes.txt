@@ -1,5 +1,6 @@
 1)You can download a free MySQL database at 
-https://www.mysql.com/downloads/
+https://www.mysql.com/downloads/ 
+and install workbnch 
 
 2) runthe npm init command to create the package.json file
 >npm init -y
@@ -17,6 +18,14 @@ flush privileges;
 
 6)create selectquery.js to slect records from table
 >node selectquery.js
+
 7) insert query
 >node insertquery.js
+
+8) update query
+>node updatequery.js
+
+9) delete query
+>node deletequery.js
+
 

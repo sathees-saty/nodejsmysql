@@ -10,9 +10,10 @@ var con = mysql.createConnection({
 
 con.connect(function(err) {
   if (err) throw err;
-  var sql = "INSERT INTO customers (name, address) VALUES ('Google Map', 'London')";
+  //update query
+  var sql = "DELETE FROM customers WHERE address = 'London'";
   con.query(sql, function (err, result) {
     if (err) throw err;
-    console.log("1 record inserted, ID: " + result.insertId);
+    console.log("record deleted, ID: " + result.affectedRows);
   });
 });

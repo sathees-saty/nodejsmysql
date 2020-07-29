@@ -1,4 +1,5 @@
 const mysql = require('mysql');
+var msg = 'Welcome to SATY Learning';
 
 // First you need to create a connection to the database
 // Be sure to replace 'user' and 'password' with the correct values
@@ -13,6 +14,7 @@ con.connect((err) => {
     console.log('Error connecting to MySql Db');
     return;
   }
+  console.log(msg);
   console.log('MySQL Connection established');
 });
 
